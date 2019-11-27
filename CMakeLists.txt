@@ -4,7 +4,7 @@ set(CMAKE_DEBUG_POSTFIX d)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
-project(AverageProject)
+project(average)
 enable_language(CXX)
 
 ##
@@ -34,4 +34,4 @@ file(GLOB sources
   "${PROJECT_SOURCE_DIR}/include/average/*.h"
   "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
-add_executable(AverageProject ${sources})
+add_executable(average ${sources})
