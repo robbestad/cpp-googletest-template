@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
         std::sscanf( argv[i + 1], "%d", &mylist[i] ) ;
     }
 	double snitt = gjennomsnitt(mylist, size);
-	std::printf("\nAverage: %d\n", snitt);
+	std::printf("\nAverage: %f\n", snitt);
 	return 0;
 }
 
