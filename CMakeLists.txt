@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.1)
-set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_DEBUG_POSTFIX d)
 
-project(testy)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+
+project(AverageProject)
+enable_language(CXX)
 
 ##
 ### Test definitions ###
@@ -27,7 +31,7 @@ add_subdirectory(test)
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
 file(GLOB sources
-  "${PROJECT_SOURCE_DIR}/include/testy/*.h"
-  "${PROJECT_SOURCE_DIR}/src/*.c")
+  "${PROJECT_SOURCE_DIR}/include/average/*.h"
+  "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
-add_executable(testy ${sources})
+add_executable(AverageProject ${sources})
